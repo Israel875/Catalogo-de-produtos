@@ -1,53 +1,39 @@
-
 function FormularioProduto({ produto, onChange, onSubmit }) {
   return (
     <form className="form-base" onSubmit={onSubmit}>
-      <div>
-        <label>Nome</label>
-        <input
-          type="text"
-          name="nome"
-          value={produto.nome}
-          onChange={onChange}
-        />
-      </div>
+      <input
+        type="text"
+        name="nome"
+        placeholder="Nome do produto"
+        value={produto.nome}
+        onChange={onChange}
+      />
 
-      <div>
-        <label>Preço</label>
-        <input
-          type="text"
-          name="preco"
-          value={produto.preco}
-          onChange={onChange}
-        />
-      </div>
+      <input
+        type="number"
+        name="preco"
+        placeholder="Preço"
+        value={produto.preco}
+        onChange={onChange}
+      />
 
-      <div>
-        <label>Descrição</label>
-        <input
-          type="text"
-          name="descricao"
-          value={produto.descricao}
-          onChange={onChange}
-        />
-      </div>
+      <input
+        type="text"
+        name="descricao"
+        placeholder="Descrição"
+        value={produto.descricao}
+        onChange={onChange}
+      />
 
-      <div>
-        <label>Imagem</label>
-        <input
-          type="text"
-          name="imagem"
-          value={produto.imagem}
-          onChange={onChange}
-        />
-      </div>
+      <input
+        type="text"
+        name="imagem"
+        placeholder="URL da imagem"
+        value={produto.imagem}
+        onChange={onChange}
+      />
 
-<button type="submit">
-  {produto.nome ? "Salvar Produto" : "Adicionar Produto"}
-</button>
-
-
-
+      <button type="submit">Salvar Produto</button>
     </form>
   );
 }

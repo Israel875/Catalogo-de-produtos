@@ -60,6 +60,7 @@ body {
 }
 
 .form-base input {
+  max-width: 100%;
   padding: 12px;
   border-radius: 8px;
   border: 1px solid #ccc;
@@ -78,6 +79,7 @@ body {
   cursor: pointer;
   display: block;
   margin: 20px auto 0;
+  
 }
 
 .produto-card:hover {
